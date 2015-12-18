@@ -1,0 +1,22 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+int CalcVolume(double raio){
+    double aux;
+
+    aux =(4*pow(raio,3))/3;
+    return aux;
+
+}
+
+int main (void){
+
+    double raio,resultado;
+
+    printf("Entre com o raio da esfera: ");
+    scanf("%lf",&raio);
+
+    resultado = CalcVolume(raio);
+
+    printf("\nO volume da espera de raio %lf = %lf",raio,resultado);
+}
