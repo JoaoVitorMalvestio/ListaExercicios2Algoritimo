@@ -1,0 +1,35 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+int CalcPerfeito(int num){
+    int aux = 0, i;
+
+    for(i = 1;i < num;i++){
+        if(num%i==0){
+            aux = i + aux;
+        }
+    }
+    if(num == aux){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+
+int main (void){
+
+    int num,resultado;
+
+    printf("Entre com um numero positivo e inteiro: ");
+    scanf("%d",&num);
+
+    resultado = CalcPerfeito(num);
+
+    if(resultado){
+        printf("O numero %d eh perfeito!",num);
+    }
+    else{
+        printf("O numero %d nao eh perfeito!",num);
+    }
+}
