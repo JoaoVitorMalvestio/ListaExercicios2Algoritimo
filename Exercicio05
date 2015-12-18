@@ -1,0 +1,30 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+void CalcMenorMaior(int num[]){
+    int auxMaior,auxMenor,i;
+
+    auxMaior = num[0];
+    auxMenor = num[0];
+
+    for(i = 0;i < 5;i++){
+        if(auxMaior < num[i]){
+            auxMaior = num[i];
+        }
+        if(auxMenor > num[i]){
+            auxMenor = num[i];
+        }
+    }
+
+    printf("O maior numero = %d e o menor = %d",auxMaior,auxMenor);
+}
+
+int main (void){
+
+    int num[5],resultado;
+
+    printf("Entre com 5 numeros positivos e inteiros separados por espaco: ");
+    scanf("%d %d %d %d %d",&num[0],&num[1],&num[2],&num[3],&num[4]);
+
+    CalcMenorMaior(num);
+}
