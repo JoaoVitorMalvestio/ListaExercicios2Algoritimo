@@ -1,0 +1,23 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+int CalcFatorial(int num){
+    int aux = num, i;
+
+    for(i = 1;i < num;i++){
+        aux = aux * i;
+    }
+    return aux;
+}
+
+int main (void){
+
+    int num,resultado;
+
+    printf("Entre com um numero positivo e inteiro: ");
+    scanf("%d",&num);
+
+    resultado = CalcFatorial(num);
+
+    printf("\nO fatorial de %d = %d",num,resultado);
+}
