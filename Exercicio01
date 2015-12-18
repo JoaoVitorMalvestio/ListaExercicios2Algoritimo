@@ -1,0 +1,22 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+int TranformarSeg(int hora,int min,int seg){
+    int aux;
+
+    aux =(hora*3600)+(min*60)+seg;
+    return aux;
+
+}
+
+int main (void){
+
+    int hora,min,seg,resultado;
+
+    printf("Entre com 3 numeros separados por espaço: ");
+    scanf("%d %d %d",&hora,&min,&seg);
+
+    resultado = TranformarSeg(hora,min,seg);
+
+    printf("O horario inforado em segundo eh = %d",resultado);
+}
