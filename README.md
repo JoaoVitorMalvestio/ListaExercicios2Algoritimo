@@ -1,1 +1,0 @@
-# ListaExercicios2Algoritimoadsad
